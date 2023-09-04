@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Website</title>
+    <style>
+        #home{font-family: 'Recoleta';
+    src: local('Recoleta SemiBold'), local('Recoleta-SemiBold'),
+        url('Recoleta-SemiBold.woff2') format('woff2'),
+        url('Recoleta-SemiBold.woff') format('woff'),
+        url('Recoleta-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-size: 60px;
+    font-style: normal;}
+    
+        /* Additional CSS styles for the review carousel */
+        .review-carousel-container {
+            max-width: 100%;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .review-carousel {
+            display: flex;
+            /* Adjust animation duration as needed */
+            animation: slide 10s linear infinite;
+        }
+
+        .review-card {
+            flex: 0 0 33.33%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(120, 120, 120, 0.8); /* Semi-transparent gray background */
+            border: 1px solid #ccc; /* Border for the tiles */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .profile-picture {
+            width: 50px; /* Adjust the size as needed */
+            height: 50px; /* Adjust the size as needed */
+            border-radius: 50%;
+        }
+
+        .review-content {
+            flex-grow: 1;
+            color: #fff; /* Text color for review content */
+            font-family: Arial, sans-serif; /* Font style for review content */
+        }
+
+        /* Original keyframes animation for moving from left to right */
+        @keyframes slide {
+            0%, 100% {
+                transform: translateX(0%);
+            }
+            20% {
+                transform: translateX(0%);
+            }
+            25% {
+                transform: translateX(-33.33%); /* Move to Review 2 */
+            }
+            45% {
+                transform: translateX(-33.33%); /* Stay at Review 2 */
+            }
+            50% {
+                transform: translateX(-66.67%); /* Move to Review 3 */
+            }
+            70% {
+                transform: translateX(-66.67%); /* Stay at Review 3 */
+            }
+            75% {
+                transform: translateX(-100%); /* Move to Review 4 */
+            }
+            95% {
+                transform: translateX(-100%); /* Stay at Review 4 */
+            }
+        }
+
+        /* Updated header styles */
+        header {
+            background-color:; /* Semi-transparent purple background */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff; /* Text color for header links */
+            font-weight: bold;
+        }
+
+        /* Video background styles */
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Rest of your existing styles */
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="video-background">
+        <source src="star.mp4" type="video/mp4">
+        <!-- Add additional sources for different video formats if needed -->
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <nav>
+            <ul>
+                <li style="float: right;"><a href="#home">Home</a></li>
+                <li style="float:right;"><a href="#reviews">Reviews</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+         <center>   <h1 style="color: #fff;" > Top Reviews</h1></center>
+           <br>
+        </section>
+
+        <section id="reviews" class="review">
+            
+            <article>
+                
+                
+            </article>
+        </section>
+
+        <!-- Review Carousel Section -->
+        <section class="review-carousel-container">
+            <div class="review-carousel">
+                <div class="review-card">
+                    <img src="prof2.jpg" alt="Profile Picture" class="profile-picture">
+                    <div class="review-content">
+                       <b> <h3 style="color: #fff;">Itaewon Class - Roger Ebert</h3></b>
+                        <p style="color: #fff;">An empowering tale of resilience and revenge, featuring strong character arcs and a thought-provoking message.</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="pic3.jpg" alt="Profile Picture" class="profile-picture">
+                    <div class="review-content">
+                       <b> <h3 style="color: #fff;">Goblin - David Bordwell</h3></b>
+                        <p style="color: #fff;">A visually stunning fantasy romance with a unique storyline and standout performances.</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="pic4.jpg" alt="Profile Picture" class="profile-picture">
+                    <div class="review-content">
+                       <b> <h3>Reply 1988 - Andrew Sarris</h3></b>
+                        <p>A heartwarming journey through friendship and family bonds, full of nostalgia and laughter.</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="pic5.jpg" alt="Profile Picture" class="profile-picture">
+                    <div class="review-content">
+                        <h3>Vincenzo - Gene Siskel</h3>
+                        <p>A dark comedy with a gripping plot, showcasing Song Joong-ki's exceptional acting.</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="pic7.jpg" alt="Profile Picture" class="profile-picture">
+                    <div class="review-content">
+                        <h3>Start-Up - Pauline Kael</h3>
+                        <p>A modern-day drama with a fresh take on entrepreneurship and love, offering engaging storytelling.</p>
+                    </div>
+                </div>
+                <!-- Add three more review cards as needed -->
+                <div class="review-card">
+                    <img src="pic6.jpg" alt="Profile Picture" class="profile-picture">
+                    <div class="review-content">
+                        <h3>Signal - Rex Reed</h3>
+                        <p>An intense crime thriller with supernatural elements, keeping viewers on the edge of their seats.</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="profile7.jpg" alt="Profile Picture" class="profile-picture">
+                    <div class="review-content">
+                        <h3>Review 7</h3>
+                        <p>Yet another review goes here.</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="pic6.jpg" alt="Profile Picture" class="profile-picture">
+                    <div class="review-content">
+                        <h3>Review 8</h3>
+                        <p>And one more review for the list.</p>
+                    </div>
+                </div>
+                <!-- Add more review cards as needed -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p style="color: #fff;">&copy; unbroken code</p>
+    </footer>
+</body>
+</html>

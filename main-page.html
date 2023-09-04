@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Drama Analysis</title>
+    <style>
+        /* Styling for the trending-now container */
+.trending-now {
+    display: flex;
+    align-items: center; /* Center text and arrow vertically */
+    justify-content: space-between; /* Place text on the left and arrow on the right */
+}
+
+/* Styling for the right-pointing arrow */
+.arrow-right {
+    font-size: 24px; /* Adjust the size of the arrow as needed */
+    color: #F0A500; /* Arrow color */
+    margin-left: 10px; /* Add some spacing between text and arrow */
+}
+
+        /* Add this CSS to your existing stylesheet */
+
+.drama-list {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.drama-list h2{font-size: 30px;}
+
+.drama-item {
+    color: #E6D5B8;
+    width: 300px;
+    margin: 20px;
+    background-color: #1B1A17;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+
+.drama-item img {
+    max-width: 100%;
+}
+
+.drama-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.drama-item p {
+    color: #6a6a6a;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff0000;
+}
+
+        body {
+            background-color:  /* Light purple background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: /* Darker purple header */
+            color: white; /* White text color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: 
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Modified styles for navigation buttons */
+        nav a {
+            text-decoration: none;
+            color: #fff; /* White text color by default */
+            padding: 5px 15px;
+            border-radius: 5px;
+            background-color: transparent;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color:#F0A500; /* White background on hover */
+            color: #1B1A17; /* Purple text color on hover */
+        }
+
+        .container {
+            color: #E6D5B8;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1B1A17;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: ;
+            color: #F0A500;
+        }
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="video-background">
+        <source src="BG.mp4" type="video/mp4">
+        <!-- Add additional sources for different video formats if needed -->
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <h1 style="color:#F0A500;">K-Drama Analysis</h1>
+    </header>
+    <nav>
+        <ul><b>
+            <li><a href="index-final.html">Home</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="reviews-final.html">Reviews</a></li>
+            <li><a href="about-final.html">About</a></li>
+        </ul></b>
+    </nav>
+    <br><br>
+    
+    <div class="container">
+
+        <h2>Welcome to K-Drama Analysis</h2>
+        <p>Explore the fascinating world of Korean dramas and their impact on global entertainment.</p>
+        
+    </div>
+<br>
+    <section class="drama-list">
+    <div class="trending-now"><h2 style="color:#F0A500">Trending now</h2>
+        <span class="arrow-right">&#9654;</span> <br><br></div>
+    <br><br>
+    <div class="drama-item">
+        <img src="2.gif" alt="Drama 1">
+        <h3>Mr.Sunshine</h3>
+        <p>A Korean boy from a poor family who ends up in the United States after the 1871 Shinmiyangyo incident </p>
+    </div>
+
+    <!-- Duplicate the below block for additional watch tiles -->
+    <div class="drama-item">
+        <img src="3.gif" alt="Drama 2">
+        <h3>Signal</h3>
+        <p> Park Hae-yeong with spunky detective Lee Jae-han in 1989. Together, they unravel mysteries from the past and present to reshape the future.</p>
+    </div>
+
+    <div class="drama-item">
+        <img src="4.gif" alt="Drama 3">
+        <h3>Alchemy of Souls</h3>
+        <p>A powerful sorceress in a blind woman's body encounters a man from a prestigious family, who wants her help to change his destiny.</p>
+            </div>
+
+    <div class="drama-item">
+        <img src="5.gif" alt="Drama 4">
+        <h3>Tommorrow</h3>
+        <p>Made half-human and half-spirit by accident, a young man is employed by grim reapers to carry out special missions.</p>
+        
+    </div>
+    <div class="drama-item">
+        <img src="1.gif" alt="Drama 5">
+        <h3>SKY Castle</h3>
+        <p>Housewives living at the exclusive Sky Castle community use every way they can think of to get their children into Seoul National University.</p>
+        
+    </div>
+    <div class="drama-item">
+        <img src="6.gif" alt="Drama 5">
+        <h3>Mouse</h3>
+        <p>Bareum is a novice police officer of Gudong Police office, taking care of all the town's misbehaviors. One day, however, he teams up with a notorious detective Muchi to arrest a psychopathic criminal.</p>
+        
+    </div>
+
+
+    <!-- Add more watch tiles here -->
+</section>
+
+    <footer><B>
+        &copy; UNBROKEN CODE 
+  </B>  </footer>
+</body>
+</html>
